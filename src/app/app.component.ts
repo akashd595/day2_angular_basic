@@ -11,4 +11,15 @@ export class AppComponent {
   ngOnInit():void{
     this.title = "Hello From Bridgelabz"
   }
+
+
+  imgUrl = "../assets/BridgelabzLogo.png";
+  url = "https://bridgelabz.com";
+
+  
+  onClick($event : any) {
+    console.log("save button is clicked", $event);
+    window.open(this.url, "blank");
+  }
+
 }
