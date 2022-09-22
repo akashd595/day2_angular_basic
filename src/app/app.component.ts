@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day2_angular_basic';
+
+  ngOnInit():void{
+    this.title = "Hello From Bridgelabz"
+  }
 }
