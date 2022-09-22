@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'day2_angular_basic';
 
@@ -21,8 +22,10 @@ export class AppComponent {
     console.log("save button is clicked", $event);
     window.open(this.url, "blank");
   }
+  
   userName: string = "";
   nameError: string = "";
+
   onInput($event: any) {
     console.log("Event changed ", $event.data);
     const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z]{2,}$');
