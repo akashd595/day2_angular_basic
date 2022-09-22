@@ -21,5 +21,12 @@ export class AppComponent {
     console.log("save button is clicked", $event);
     window.open(this.url, "blank");
   }
+  userName: string = "";
+
+  onInput($event: any) {
+    console.log("Event changed ", $event.data);
+    
+  }
+
 
 }

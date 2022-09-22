@@ -3,9 +3,15 @@
   <!-- uc1 -->
   <h1>{{this.title}}</h1>
 
-  <!-- uc2 -->
+  <!-- uc2-3 -->
   <img [src] = "imgUrl" (click) = "onClick($event)"  alt = "Bridgelabz Logo"/>
 
-</div>
+  <!-- uc4 -->
+  <h1>Hello {{this.userName}} From Bridgelabz</h1>
 
+</div>
+<div>
+  
+  <input (input) = "onInput($event)" [(ngModel)] = "userName" />
+</div>
 <router-outlet></router-outlet>
